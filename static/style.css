@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+  -webkit-box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px,
+    rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+  -moz-box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px,
+    rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+
+main {
+  margin: 0 5%;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+h4 > a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.topbar {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.topbar-links > a {
+  margin-left: 8px;
+}
+
+.topbar > h2 {
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.project {
+  border: 1px solid rgb(191, 197, 204);
+  border-radius: 4px;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.project > p {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  main,
+  .topbar {
+    margin: 0 20%;
+  }
+}
