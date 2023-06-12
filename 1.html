@@ -22,9 +22,9 @@ While structural components HTML and CSS are well adobted by modern browsers, th
 - Multiple standards and cross-incompatibility
 Complexity leads to poor understanding because there are no dire consequences for misusage and there are other more interesting things to spend your time on. Oh, how painful it is to make the prettiest website out there only to realize it only works on your prefered browser. Not to mention how difficult it is to design something coherent while supporting multiple screen sizes.
 
-So, how do you use these blocks? Throwing away the unnecessary bloat we are left with something useful: meta, style and a. That's really all you need. With meta, various hints can be given to the rendering engine of the document. For example the following one-liner makes text readable on mobile devices by not letting it overflow horizontally. It's good to keep in mind that these are just nice-to-have and can be thrown away whenever!
+So, how do you use these blocks? Throwing away the unnecessary bloat we are left with something useful: meta, style and a. That's really all you need. With meta, various hints can be given to the rendering engine of the document. For example the following one-liner (wrap in <>) makes text readable on mobile devices by not letting it overflow horizontally. It's good to keep in mind that these are just nice-to-have and can be thrown away whenever!
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 
 Styling with style is really something that's there just mostly to improve readibility. I personally like to have content 80 characters wide and centered. It's also nice to have some extra space between lines. However, it has some functional usage for the write. By changing white-space rule to pre-line, it's possible to write documents and render linebreaks as they appear on the editor. It's also good to keep in mind that it's not supported on all devices so your mileage may vary on how useful it actually is.
 
