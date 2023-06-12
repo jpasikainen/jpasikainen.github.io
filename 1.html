@@ -32,6 +32,11 @@ Last but not the least, a-elements! Without making a deep dive into its soul, "a
 
 JavaScript (JS) on the other hand is a completely different beast. You want to display text? No need for it. You want to manipulate data in real time, display complex graphics and provide dynamic content? Go ahead, but don't forget to read on serverside rendering and figuring out if that fits your needs! For the sake of simplicity, we are going to drop JS out of the picture completely.
 
+## Drawbacks
+- Website might render or not due to not actually being proper HTML (no html element) beyond having .html extension
+- Poor search engine discoverability (hard to test, but very likely due to lack of metadata and broken HTML)
+- Not accessible for impaired people (sorry!) 
+
 ## Workflow
 To render proper HTML without actually writing it, one can find static-site-generators (SSGs) quite useful. While great for managing complex structures, they really seem to fall short on delivering and deployment. You need a build step, which is most likely very prone to breaking if things are not configured with utmost care and precision. When this step fails, you are left with nothing to show. My solution is to just write basic text files by following the tips as described so far directly on GitHub. It's not only easy, but also possible to use on web browsers without any special tooling.
 
