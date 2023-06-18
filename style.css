@@ -1,0 +1,115 @@
+/* Source: https://github.com/sainnhe/everforest/blob/master/palette.md */
+:root {
+    /* Dimmed Background */
+    --bg_dim: #232A2E;
+    /* Default Background, Line Numbers Background, Signs Background, Status Line Background (inactive), Tab Line Label (active) */
+    --bg0: #2D353B;
+    /* Cursor Line Background, Color Columns, Closed Folds Background, Status Line Background (active), Tab Line Background */
+    --bg1: #343F44;
+    /* Popup Menu Background, Floating Window Background, Window Toolbar Background */
+    --bg2: #3D484D;
+    /* List Chars, Special Keys, Tab Line Label Background (inactive) */
+    --bg3: #475258;
+    /* Window Splits Separators, Whitespaces, Breaks */
+    --bg4: #4F585E;
+    /* Not currently used */
+    --bg5: #56635f;
+    /* Visual Selection */
+    --bg_visual: #543A48;
+    /* Diff Deleted Line Background, Error Highlights */
+    --bg_red: #514045;
+    /* Diff Added Line Background, Hint Highlights */
+    --bg_green: #425047;
+    /* Diff Changed Line Background, Info Highlights */
+    --bg_blue: #3A515D;
+    /* Warning Highlights */
+    --bg_yellow: #4D4C43;
+    /* Default Foreground, Signs, [Treesitter: Constants, Variables, Function Parameters, Properties, Symbol Identifiers] */
+    --fg: #D3C6AA;
+    /* Conditional Keywords, Loop Keywords, Exception Keywords, Inclusion Keywords, Uncategorised Keywords, Diff Deleted Signs, Error Messages, Error Signs */
+    --red: #E67E80;
+    /* Operator Keywords, Operators, Labels, Storage Classes, Composite Types, Enumerated Types, Tags, Debugging Statements */
+    --orange: #E69875;
+    /* Types, Special Characters, Warning Messages, Warning Signs, [Treesitter: Modules, Namespaces] */
+    --yellow: #DBBC7F;
+    /* Function Names, Method Names, Strings, Characters, Hint Messages, Hint Signs, Search Highlights, [Treesitter: Constructors, Function Calls, Built-In Functions, Macro Functions, String Escapes, Regex Literals, Tag Delimiters, Non-Structured Text] */
+    --green: #A7C080;
+    /* Constants, Macros, [Treesitter: Strings, Characters] */
+    --aqua: #83c092;
+    /* Identifiers, Uncategorised Special Symbols, Diff Changed Text Background, Info Messages, Info Signs, [Treesitter: Fields, Special Punctuation, Math Environments] */
+    --blue: #7FBBB3;
+    /* Booleans, Numbers, Preprocessors, [Treesitter: Built-In Constants, Built-In Variables, Macro-Defined Constants, Attributes/Annotations] */
+    --purple: #D699B6;
+    /* Line Numbers, Fold Columns, Concealed Text, Foreground UI Elements */
+    --grey0: #7A8478;
+    /* Comments, Punctuation Delimiters, Closed Folds, Ignored/Disabled, UI Borders, Status Line Text */
+    --grey1: #859289;
+    /* Cursor Line Number, Tab Line Label (inactive) */
+    --grey2: #9DA9A0;
+    /* Menu Selection Background, Tab Line Label Background (active), Status Line Mode Indicator */
+    --statusline1: #A7C080;
+    /* Status Line Mode Indicator */
+    --statusline2: #D3C6AA;
+    /* Status Line Mode Indicator */
+    --statusline3: #E67E80;   
+}
+
+body {
+    background-color: var(--bg0);
+    color: var(--fg);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+main {
+    background-color: var(--bg_dim);
+    min-height: 100vh;
+}
+
+a {
+    color: var(--blue)
+}
+
+p {
+    margin: 0;
+    padding: 1ch;
+    font-size: 18px;
+}
+
+footer {
+    background-color: var(--bg1);
+    color: var(--grey0);
+}
+
+.wasd::after {
+    content: '」';
+}
+
+.hero {
+    font-weight: bold;
+    font-size: 5vmax;
+}
+
+.hero-tag {
+    font-size: 1.5vmax;
+}
+
+.spaced {
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+}
+
+.center-middle {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-left {
+    align-items: stretch;
+}
+
+.column {
+    flex-direction: column;
+}
