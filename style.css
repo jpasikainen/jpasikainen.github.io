@@ -5,18 +5,35 @@
     line-height: 1.5em;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 98vh;
+}
+
+footer {
+    min-height: 2vh;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
 legend {
     padding: 5px;
     background-color: #99B898;
     border-radius: 5px;
     color: #2A363B;
+    font-weight: bold;
 }
 
 fieldset {
     border-color: #99B898;
     border-radius: 5px;
     color: #99B898;
-    max-width: fit-content;
+    border-style: dashed;
 }
 
 ul {
